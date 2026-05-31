@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap");
+@import "tailwindcss";
+
+:root {
+  --bg: #f3f7ff;
+  --surface: rgba(255, 255, 255, 0.92);
+  --surface-strong: #ffffff;
+  --text: #0f172a;
+  --muted: #475569;
+  --border: #dbe4ff;
+  --ring: #2563eb;
+  --shadow: 0 22px 50px rgba(37, 99, 235, 0.12);
+}
+
+html.dark {
+  --bg: #0b1223;
+  --surface: rgba(15, 23, 42, 0.88);
+  --surface-strong: #111c35;
+  --text: #e2e8f0;
+  --muted: #94a3b8;
+  --border: rgba(148, 163, 184, 0.28);
+  --ring: #60a5fa;
+  --shadow: 0 22px 50px rgba(2, 6, 23, 0.6);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Manrope", sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(circle at 5% 5%, rgba(56, 189, 248, 0.2), transparent 36%),
+    radial-gradient(circle at 95% 4%, rgba(59, 130, 246, 0.22), transparent 34%),
+    radial-gradient(circle at 50% 100%, rgba(20, 184, 166, 0.16), transparent 42%),
+    var(--bg);
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+a {
+  color: inherit;
+}
+
+.glass-card {
+  border: 1px solid var(--border);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(8px);
+}
+
+.panel {
+  border: 1px solid var(--border);
+  background: var(--surface-strong);
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.focus-ring:focus {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
