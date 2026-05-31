@@ -1,4 +1,5 @@
 # Shortly - Complete MERN URL Shortener
+#LIVE URL: https://shortly-orpin-one.vercel.app/
 
 Shortly is a production-ready URL shortener website built with the MERN stack.  
 It converts long URLs into short shareable links, tracks clicks, supports optional custom alias + expiration, and provides a modern responsive UI.
